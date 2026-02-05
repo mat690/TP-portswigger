@@ -1,7 +1,7 @@
 
 Pour le labo 1
 
-Pour le labo 1 il s'agissait de manipuler un cookie pour pouvoir se connecter en admin avec un compte lambda en modfiiant la valeur de admin=false par admin=true on pouvait accéder en admin et pour voir supprimer des profils utilisateurs. Avec l'aide du cookie on a pnsi profiter du compte administrateuru effectuer une élévation de privilège et ai
+Pour le labo 1 il s'agissait de manipuler un cookie pour pouvoir se connecter en admin avec un compte utilisateur en modfiiant la valeur de admin=false par admin=true on pouvait accéder en admin et pour voir supprimer des profils utilisateurs. Avec l'aide du cookie on a pu ainsi profiter du compte administrateuru effectuer une élévation de privilège et ainsi profiter du compte adminstrateur
 
 image::image/vrailabo1.png[]
 Pour le labo 2
