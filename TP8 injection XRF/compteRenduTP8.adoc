@@ -1,0 +1,36 @@
+**Question1**
+
+
+L'attaque ne fonctionnerait pas car il faudrait que la victime ait été rédirigé par la requête POST de l'exploit Ca va redirigé vers la page piraté. Pour que l'attaque fonctionne il faut que la victime rentre en contact avec le site.
+
+
+**question2**
+
+
+C'est une erreur de logique algorithmique en effet le serveur considère le cookie comme une preuve tangible d'authentification alors que dans l'exemple tout à l'heure on a pu voler ce cookie. Au lieu de considérer le cookie pour un utilisateur précis, il va le prendre sur pour tout entrée dans le site. C'est sur cette faille que repose l'attaque réalisé précédemment.
+
+
+**question 3**
+
+Les cookies sont liés au domaine de la destinatio de la requêteLa victime est connectée à Mutillidae
+→ son navigateur possède un cookie :
+
+PHPSESSID=abc123 (domaine: mutillidae.local)
+
+Elle visite ta page malveillante (hébergée ailleurs)
+
+Cette page contient un formulaire :
+
+<form action="http://mutillidae.local/change-password.php" method="POST">
+
+Le formulaire est soumis automatiquement (JS ou auto-submit)
+
+👉 Le navigateur envoie la requête vers mutillidae.local
+
+⚠️ Et là :
+
+Le navigateur voit que la requête cible mutillidae.local
+
+Donc il ajoute automatiquement le cookie associé à ce domaine :
+
+Cookie: PHPSESSID=abc123
