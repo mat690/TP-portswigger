@@ -1,0 +1,17 @@
+**question C.3**
+
+1️⃣ Token CSRF par session
+Côté client : le token est envoyé dans le formulaire (champ caché)
+Côté serveur : le token est stocké dans la session et comparé à celui reçu
+2️⃣ Token CSRF à usage unique (par formulaire)
+Côté client : le token unique est inclus dans le formulaire
+Côté serveur : le token est stocké temporairement sur le serveur et invalidé après utilisation
+
+
+
+**question C.4**
+
+Activer CSRF dans Config.php.
+Ajouter le filtre 'csrf' dans Filters.php.
+Dans les vues, utiliser form_open() ou ajouter le champ <input
+type="hidden"> avec csrf_token() et csrf_hash().
